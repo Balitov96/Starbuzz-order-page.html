@@ -1,0 +1,43 @@
+<form action="http"//starbuzzcoffee.com/processorder.php" method="post">
+<p>
+Выберите кофе:
+<select name="beans">
+<option value="Домашняя смесь">Домашняя смесь</option>
+<option value="Боливия">Боливия</option> 
+<option value="Гватемала">Гватемала</option>
+<option value="Кения"> Кения</option>
+</slect>
+</p>
+<p>
+Тип:<br>
+<input type="radio" name="beantype" value="зерна">Кофе в зернах<br>
+<input type="radio" name="beantype" value="мототый">Молотый кофе
+</p>
+<p>Количество пакетиков:<input type="number" name="bags" min="1" max="10"></p>
+<p>Доставка к указаной дате: <input type="date" name="date"></p>
+
+<p>
+Дополнительные услуги:<br>
+<input type="checkbox" name="extras[]" value="подарочная упаковка">подарочная
+упаковка<br>
+<input type="checkbox" name="extras[]" value="каталог"checked="checked">Доставка
+каталога вместе заказом
+</p>
+<p>
+Доставим по адресу:<br>
+Имя:<input type="text" name="name" value=""<br>
+Адрес:<input type="text" name="address" value=""<br>
+Город:<input type="text" name="city" value=""<br>
+Штат:<input type="text" name="state" value=""<br>
+Почтовый индекс:<input type="text" name="zip" value=""<br>
+Телефон:<input type="text" name="phone" value=""<br>
+</p>
+
+<p>Комментарии клиентов:<br>
+<textarea name="comments"></textarea>
+</p>
+
+<p>
+<input type="submit" value="Заказать сейчас">
+</p>
+</form>
